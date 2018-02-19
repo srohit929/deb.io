@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chat mockup</title>
+    <link href="chat.css" rel="stylesheet">
+    <script src="chat.js"></script>
+
+   <!-- Rive Script....... -->
+   <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+   
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+   <script src="libraries/p5.js"></script>
+   <script src="libraries/p5.sound.js"></script>
+   <script src="libraries/p5.speech.js"></script>
+   <script src="libraries/p5.dom.js"></script>
+
+
+</head>
+
+<body>
+    <div id="promptWrapper">
+        <div id="myPrompt">
+            <span id="promptQuestion">DBOT LOGIN:</span>
+            <input id="promptAnswer" type="text" placeholder="User name..." autofocus />
+            <input id="promptButton" type="button" value="Login" />
+        </div>
+    </div>
+    <main>
+
+        <div id="navWrapper">
+            <button id="navToggle" class="navbar-toggle"></button>
+            <div id="user-pic">
+                <button class="online-status" id="yourStatus"></button>
+                <div id="toggleStatusMenu" class="navbar collapsed">
+                    <ul>
+                        <li>
+                            Set your status:
+                        </li>
+                        <li class="status" value="#00ff00">
+                            <div class="online-status online"></div> Online
+                        </li>
+                        <li class="status" value="orange">
+                            <div class="online-status bussy"></div> Bussy
+                        </li>
+                        <li class="status" value="red">
+                            <div class="online-status away"></div> Away
+                        </li>
+                        <li class="status" value="lightgray">
+                            <div class="online-status offline"></div> Offline
+                        </li>
+                    </ul>
+                </div>
+                <img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" alt="profile_picture" />
+            </div>
+            <div id="contact-pic">
+                <div class="online-status"></div>
+                <img src="https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg" alt="profile_picture" />
+            </div>
+            
+            <div id="toggleContactMenu" class="navbar collapsed">
+                <ul>
+                    
+                </ul>
+                <div id="pickerMenuBody">
+                    <div id="picker-wrapper">
+                        <div id="picker"></div>
+                        <div id="picker-indicator"></div>
+                    </div>
+                    <div id="slider-wrapper">
+                        <div id="slider"></div>
+                        <div id="slider-indicator"></div>
+                    </div>
+                    
+                    <button id="applyColor">X</button>
+                </div>
+
+            </div>
+            <div id="user-info-btn"></div>
+            <nav id="mainNav" class="navbar collapsed">
+                
+            </nav>
+        </div>
+        <div id="chat-body">
+            <div id="messages" class="mm">
+                <div class="msg him">
+                    <span>Hii I am Misa...!!</span>
+                </div>
+                <div class="msg him">
+                    <span>Developed by ToughX developers.</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="user-input">
+            <textarea id="msg-text" rows="4"></textarea>
+            <button id="image-btn" onclick="document.getElementById('file-input').click();"><i class="far fa-image"></i><input id="file-input" type="file" name="name" style="display: none;" /></button>
+            <button id="emoji-btn" data-emojiable="true"><i class="far fa-smile"></i></button>
+            <button id="send-btn"><i class="fab fa-telegram-plane"></i></button>
+        </div>
+
+    </main>
+    <div id="user-info-section">
+
+    </div>
+</body>
+
+</html>
