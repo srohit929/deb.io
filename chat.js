@@ -121,7 +121,7 @@ document.getElementById("emoji-btn").addEventListener("click", soundSystem);
 
 function soundSystem() {
     speech = new p5.Speech();
-    speech.setRate(0.7);
+    speech.setRate(1);
     speech.setPitch(1);
     speech.setVoice('SAPI');
     speech.speak(rreplay);
