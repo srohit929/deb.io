@@ -122,7 +122,7 @@ document.getElementById("emoji-btn").addEventListener("click", soundSystem);
 function soundSystem() {
     speech = new p5.Speech();
     speech.setRate(0.6);
-    speech.setPitch(0.1);
+    speech.setPitch(1);
     //speech.setVoice('Microsoft Zira - English (United States)');
     speech.speak(rreplay);
 
