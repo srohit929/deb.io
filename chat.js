@@ -82,9 +82,7 @@ window.addEventListener("load", function(){
             bot.sortReplies();
             rreplay = bot.reply('local-user', mmsg);
             console.log(rreplay);
-            
-speech.setRate(0.6);
-    speech.setPitch(0.1);            
+                        
             recieveMessage(rreplay);
         }
 
@@ -121,7 +119,7 @@ function soundSystem() {
     speech = new p5.Speech();
     speech.setRate(0.6);
     speech.setPitch(0.1);
-    //speech.setVoice('Microsoft Zira - English (United States)');
+    speech.setVoice('Microsoft Zira - English (United States)');
     speech.speak(rreplay);
 }
     // Quasi login lul
