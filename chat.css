@@ -271,7 +271,7 @@ a label {
     right: 0;
     background: #ae96a3;
     border-radius: none;
-    height: 40px;
+    height: 50px;
     margin: 0% 0%;
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color=#000000)";
     /*IE 8*/
@@ -290,7 +290,7 @@ a label {
     font-size: 20px;
     width: 70%;
     margin-left: 30%;
-    height: 40px;
+    height: 50px;
     max-height: 10em;
     border-radius: none;
     resize: none;
@@ -340,8 +340,8 @@ a label {
     position: absolute;
     right: 2%;
     top: 5px;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 30px;
     background: #0066ff;
     color: white;
@@ -361,8 +361,8 @@ a label {
     position: absolute;
     left: 2%;
     top: 5px;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 30px;
     background: white;
     color: #0066ff;
