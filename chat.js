@@ -36,8 +36,7 @@ window.addEventListener("load", function(){
             
             document.getElementById('yourStatus').style.backgroundColor = this.getAttribute("value");
             document.getElementById('yourStatus').style.borderColor = this.getAttribute("value");
-        } 
-         
+        }
         
             for (var i = 0; i < changeUserColor.length; i++) {
                 
@@ -90,9 +89,7 @@ window.addEventListener("load", function(){
 
         function brainError() {
             console.log('Chatbot Error!');
-        }
-
-    }
+        }    }
 
 
 function recieveMessage(breply) {
@@ -122,7 +119,7 @@ document.getElementById("emoji-btn").addEventListener("click", soundSystem);
 function soundSystem() {
     speech = new p5.Speech();
 
-    //speech.setVoice('Microsoft Zira - English (United States)');
+    speech.setVoice('Microsoft Zira - English (United States)');
     speech.speak(rreplay);
 }
     // Quasi login lul
