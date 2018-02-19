@@ -36,7 +36,8 @@ window.addEventListener("load", function(){
             
             document.getElementById('yourStatus').style.backgroundColor = this.getAttribute("value");
             document.getElementById('yourStatus').style.borderColor = this.getAttribute("value");
-        }
+        } 
+         
         
             for (var i = 0; i < changeUserColor.length; i++) {
                 
@@ -44,7 +45,7 @@ window.addEventListener("load", function(){
                 
             }
         
-    // Quasi sending message to contact
+    // Deb sending message to contact
 
     let mmsg;
     let breply;
@@ -82,13 +83,16 @@ window.addEventListener("load", function(){
             bot.sortReplies();
             rreplay = bot.reply('local-user', mmsg);
             console.log(rreplay);
-                        
+            
+         
             recieveMessage(rreplay);
         }
 
         function brainError() {
             console.log('Chatbot Error!');
-        }    }
+        }
+
+    }
 
 
 function recieveMessage(breply) {
@@ -119,10 +123,11 @@ function soundSystem() {
     speech = new p5.Speech();
     speech.setRate(0.6);
     speech.setPitch(0.1);
-    speech.setVoice('Microsoft Zira - English (United States)');
+    //speech.setVoice('Microsoft Zira - English (United States)');
     speech.speak(rreplay);
+
 }
-    // Quasi login lul
+    // Deb login lul
     document.getElementById("promptAnswer")
     .addEventListener("keyup", function(event) {
         event.preventDefault();
