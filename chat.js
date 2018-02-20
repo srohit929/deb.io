@@ -51,6 +51,7 @@ window.addEventListener("load", function(){
     let breply;
     let speech;
     let rreplay;
+    var val = 1;
     document.getElementById("send-btn").addEventListener("click", sendMessage);
     function sendMessage() {
         if(document.getElementById("msg-text").value != '') {
@@ -123,11 +124,18 @@ function soundSystem() {
     speech = new p5.Speech();
     speech.setRate(1);
     speech.setPitch(1);
-    speech.setVoice('SAPI');
-    speech.speak(rreplay);
+    speech.setVoice();
+    if(val == 1) {
+        speech.speak(rreplay);
+        val = 0;
+    }
+    else if (val == 0) {
+        speech.stop();
+        val = 1;
+    }
 
 }
-    // Deb login lul
+    // Deb login
     document.getElementById("promptAnswer")
     .addEventListener("keyup", function(event) {
         event.preventDefault();

@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: #e6e6e6;
+    background: linear-gradient(to right, #de6262, #ffb88c);
     font-family: 'Space Mono', monospace;
     overflow: hidden;
     transition: all .2s ease-in-out;
@@ -15,7 +15,7 @@ body {
 
 main {
     display: none;
-    background: #aaa7c1;
+    background: #fddba8;
     max-width: 350px;
     max-height: 500px;
     position: absolute;
@@ -50,7 +50,7 @@ button:focus {
     z-index: 100;
     position: relative;
     width: 100%;
-    background: #ae96a3;
+    background: #ffbe9b;
     text-align: center;
     height: 60px;
     border-radius: none;
@@ -269,7 +269,7 @@ a label {
     bottom: 5px;
     left: 0;
     right: 0;
-    background: #ae96a3;
+    background: #ffbe9b;
     border-radius: none;
     height: 50px;
     margin: 0% 0%;
